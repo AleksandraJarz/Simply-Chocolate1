@@ -1,0 +1,72 @@
+.hero-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 30px;
+  max-width: 335px;
+  height: 621px;
+  padding: 370px 20px 20px;
+  margin-bottom: 72px;
+
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0)),
+    url('../../img/hero_mob1x.jpg');
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../../img/hero_mob2x.jpg');
+  }
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  color: var(--background-white);
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.hero-btn-buy {
+  background: var(--brand-color);
+  border-radius: 80px;
+  padding: 12px 28px;
+  color: var(--background-white);
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.hero-btn-how {
+  padding: 12px 20px;
+  background: transparent;
+  border-radius: 80px;
+  border-color: var(--background-white);
+  color: var(--background-white);
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}

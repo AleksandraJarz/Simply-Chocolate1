@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BqWoN3NN.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BUVczrnA.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -42,7 +42,7 @@
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="container">
+      <section class="hero container">
   <div class="hero-container">
     <h1 class="visually-hidden">Chocolate</h1>
     <p class="hero-title">
@@ -52,12 +52,23 @@
     <div class="hero-btns-position">
       <ul class="hero-buttons">
         <li class="hero-btn-item">
-          <button type="button" class="hero-btn-buy">Buy now</button>
+          <button type="button" class="hero-btn-buy" aria-label="buy now">
+            Buy now
+          </button>
         </li>
         <li class="hero-btn-item">
-          <button class="hero-btn-how">How it's made</button>
+          <a href="#how_its_made" class="hero-btn-how">How it's made</a>
         </li>
       </ul>
+
+      <a class="hero-scroll-btn" href="#footer">
+        scroll down
+        <span class="hero-scroll-container">
+          <svg class="scroll-icon">
+            <use href="/vanilla-app-template/assets/icons-06ldFTDL.svg#scroll_down"></use>
+          </svg>
+        </span>
+      </a>
     </div>
   </div>
 </section>

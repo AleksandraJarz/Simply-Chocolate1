@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DyQOL914.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BzXdaBCc.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -180,30 +180,41 @@
   </div>
 </section>
 
-      <section>
-  <div>
-    <ul>
-      <li>
-        <h3>Unsurpassed taste</h3>
-        <p>
+      <section class="benefits">
+  <div class="container benefits-container">
+    <h2 class="visually-hidden">Advantages</h2>
+    <ul class="benefits-list">
+      <li class="benefits-list-item benefits-item">
+        <svg class="benefits-icon" width="62" height="62">
+          <use href="../img/icons.svg#chocobar"></use>
+        </svg>
+        <h3 class="benefits-item-title">Unsurpassed taste</h3>
+        <p class="benefits-item-desc">
           Crafted with the finest quality cocoa beans and a dediccation to
           perfection, each bite is a decadent experience that simply cannot be
           matched. Savor the richness and complexity of our Unsurpassed Taste
           and discover a new level of chocolate bliss.
         </p>
       </li>
-      <li>
-        <h3>Affordable price</h3>
-        <p>
+      <li class="benefits-list-item benefits-item">
+        <svg class="benefits-icon" width="62" height="62">
+          <use href="../img/icons.svg#coin"></use>
+        </svg>
+        <h3 class="benefits-item-title">Affordable price</h3>
+        <p class="benefits-item-desc">
           Indulge in high-quality chocolate without breaking the bank with
-          Simply Chocolate's selection of affordable treats. Enjoy mouthwatering
-          truffles and velvety chocolate bars without sacrificing taste or
-          quality. Browse our selection and indulge in affordable luxury today.
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mout-hwatering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
         </p>
       </li>
-      <li>
-        <h3>Own production</h3>
-        <p>
+      <li class="benefits-list-item">
+        <svg class="benefits-icon" width="62" height="62">
+          <use href="../img/icons.svg#spoon"></use>
+        </svg>
+        <h3 class="benefits-item-title">Own production</h3>
+        <p class="benefits-item-desc">
           We take pride in our own production process, ensuring that every step
           is carefully crafted to perfection. From selectiong the finest
           ingredients to handcrafting each piece, our attention to detail is
@@ -214,15 +225,135 @@
   </div>
 </section>
 
-      <section>
-  <div>
-    <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
-    <p>
-      At Simply Chocolate, we believe that the secret to exceptional chocolate
-      is in the details. From the sourcing of the finest ingredients to the
-      careful crafting of each individual piece, every step of our process adds
-      up to one exceptional taste sensation.
-    </p>
+      <section class="ingredients-section">
+  <div class="container ingredients-container">
+    <div class="ingredients-container-text">
+      <h2 class="ingredients-title">
+        IT ALL ADDS UP TO ONE EXCEPTIONAL
+        <span class="ingredients-title-span">TASTE</span> SENSATION
+      </h2>
+      <p class="ingredients-text">
+        At Simply Chocolate, we believe that the secret to exceptional chocolate
+        is in the details. From the sourcing of the finest ingredients to the
+        careful crafting of each individual piece, every step of our process
+        adds up to one exceptional taste sensation.
+      </p>
+    </div>
+
+    <div class="ingredients-list-container">
+      <ul class="ingredients-list">
+        <li class="ingredients-item-choco">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="../img/chocolate_desk1x.jpg 1x, ../img/chocolate_desk2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/chocolate_mobtab1x.jpg 1x, ../img/chocolate_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="../img/chocolate_mobtab1x.jpg 1x, ../img/chocolate_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+
+            <img
+              class="ingredients-image"
+              src="../img/chocolate_mobtab1x.jpg"
+              alt="Milk Chocolate"
+              width="224"
+              height="171"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+
+        <li class="ingredients-item-milk">
+          <picutre>
+            <source
+              media="(min-width: 1200px)"
+              srcset="../img/milk_desk1x.jpg 1x, ../img/milk_desk2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/milk_mobtab1x.jpg 1x, ../img/milk_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="../img/milk_mobtab1x.jpg 1x, ../img/milk_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              class="ingredients-image"
+              src="../img/milk_mobtab1x.jpg"
+              alt="Milk"
+              width="224"
+              height="171"
+              loading="lazy"
+            />
+          </picutre>
+        </li>
+        <li class="ingredients-item-nuts">
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="../img/nuts_desk1x.jpg 1x, ../img/nuts_desk2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="../img/nuts_mobtab1x.jpg 1x, ../img/nuts_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="../img/nuts_mobtab1x.jpg 1x, ../img/nuts_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              class="ingredients-image"
+              src="../img/nuts_mobtab1x.jpg"
+              alt="Nuts"
+              width="224"
+              height="171"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="ingredients-item-beans">
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="../img/beans_desk1x.jpg 1x, ../img/beans_desk2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="../img/beans_mobtab1x.jpg 1x, ../img/beans_mobtab2x.jpg 2x"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="../img/beans_mobtab1x.jpg 1x, ../img/beans_mobtab2x.jpg 2x"
+              type="image.jpg"
+            />
+            <img
+              class="ingredients-image"
+              src="../img/beans_mobtab1x.jpg"
+              alt="Choco Beans"
+              width="224"
+              height="171"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 

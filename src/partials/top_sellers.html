@@ -1,11 +1,80 @@
-<section>
-  <div>
-    <h2><span>TOP</span> SELLERS</h2>
-    <p>
-      Crazy enough chocolate originates from a bean just like the coffee bean
-      called Cacao. Cacao has been arround for thousands of years and was first
-      discovered by the Native American tribe called the Mayans.
-    </p>
-    <button>Buy now</button>
+<section id="top_sellers" class="top-sellers container">
+  <div class="top-sellers-container">
+    <h2 class="top-sellers-title">
+      <span class="top-sellers-span">TOP</span> SELLERS
+    </h2>
+
+    <ul class="top-sellers-list">
+      <li class="top-sellers-list-item top-sellers-nuts">
+        <picture>
+          <source
+            srcset="../img/topsel_desk1x.jpg 1x, ../img/topsel_desk2x.jpg 2x"
+            media="(min-width: 1200px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="../img/topsel_tab1x.jpg 1x, ../img/topsel_tab2x.jpg 2x"
+            media="(min-width: 768px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="../img/topsel_mob1x.jpg 1x, ../img/topsel_mob2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpg"
+          />
+
+          <img
+            class="top-sellers-image"
+            src="../img/topsel_desk1x.jpg"
+            alt="nuts"
+          />
+        </picture>
+        <p class="top-sellers-text desc-ts">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been arround for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="top-sellers-list-item">
+        <picture>
+          <source
+            srcset="../img/topsel2_desk1x.jpg 1x, ../img/topsel2_desk2x.jpg 2x"
+            media="(min-width: 1200px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="../img/topsel2_tab1x.jpg 1x, ../img/topsel2_tab2x.jpg 2x"
+            media="(min-width: 768px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="../img/topsel2_mob1x.jpg 1x, ../img/topsel2_mob2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpg"
+          />
+          <img
+            class="top-sellers-image"
+            src="../img/topsel2_desk1x.jpg"
+            alt="A picture of milk chocolate"
+          />
+        </picture>
+      </li>
+      <li class="top-sellers-list-item desk-image">
+        <picture>
+          <source
+            srcset="../img/topsel3_desk1x.jpg 1x, ../img/topsel3_desk2x.jpg 2x"
+            media="(min-width: 1200px)"
+            type="image/jpg"
+          />
+          <img
+            class="top-sellers-image"
+            src="../img/topsel3_desk1x.jpg"
+            alt="A picture of dark chocolate"
+          />
+        </picture>
+      </li>
+    </ul>
+
+    <button type="button" class="top-sellers-button">Buy now</button>
   </div>
 </section>

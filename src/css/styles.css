@@ -8,6 +8,7 @@
 @import url(./partials/reviews.css);
 @import url(./partials/subscribe.css);
 @import url(./partials/footer.css);
+@import url(./partials/modal-reviews.css);
 
 :root {
   --brand-color: #fd9222;

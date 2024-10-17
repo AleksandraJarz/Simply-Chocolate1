@@ -7,6 +7,45 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sue to please.
     </p>
-    <button type="button" class="subscribe-button">Subscribe</button>
+    <button type="button" class="subscribe-button" data-modal-open-4>
+      Subscribe
+    </button>
   </div>
 </section>
+
+<!--Modal-->
+<div class="backdrop is-hidden" data-modal-4>
+  <div class="sub-modal">
+    <div class="sub-background">
+      <button type="button" class="sub-button-close" data-modal-close-4>
+        <svg class="sub-svg-close">
+          <use href="../img/icons.svg#cross_white"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="sub-modal-wrapper">
+      <h2 class="sub-modal-title">
+        Explore our <br /><span class="sub-title-span">new chocolate</span>
+        first!
+      </h2>
+      <form class="sub-form">
+        <div class="sub-wrapper-button">
+          <label for="subscribe" class="sub-label">
+            <input
+              type="text"
+              class="input-sub"
+              name="email"
+              id="subscribe"
+              pattern="/^[^\s@]+@[^\s@]+\.[^\s@]+$/"
+              placeholder="Enter your email"
+            />
+          </label>
+          <button type="button" class="sub-modal-button" aria-label="Submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

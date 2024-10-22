@@ -17,7 +17,7 @@
     />
 
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-QN2BWId8.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-COudNG75.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -160,7 +160,12 @@
     <div class="hero-btns-position">
       <ul class="hero-buttons">
         <li class="hero-btn-item">
-          <button type="button" class="hero-btn-buy" aria-label="buy now">
+          <button
+            type="button"
+            class="hero-btn-buy openModalBtn"
+            aria-label="buy now"
+            data-modal-open-3
+          >
             Buy now
           </button>
         </li>
@@ -548,7 +553,9 @@
       </li>
     </ul>
 
-    <button type="button" class="top-sellers-button">Buy now</button>
+    <button type="button" class="top-sellers-button" data-modal-open-5>
+      Buy now
+    </button>
   </div>
 </section>
 
@@ -794,6 +801,133 @@
   </div>
 </footer>
 
+    <div class="backdrop is-hidden" data-modal-3>
+  <div class="thumb-div">
+    <button data-modal-close-3 type="button" class="thumb-button">
+      <svg class="thumb-svg" width="12" height="12">
+        <use href="../img/icons.svg#cross_black"></use>
+      </svg>
+    </button>
+    <h3 class="modal-sell-title">
+      BUY <span class="modal-sell-span"> NOW</span>
+    </h3>
+    <ul class="modal-sell-ul list">
+      <li class="modal-sell-li">
+        <div class="modal-sell-div">
+          <img
+            class="modal-sell-img"
+            srcset="../img/buy_modal/buy-choc1_mob.png 84w, ../img/buy_modal/buy-choc1_mob2x.png 168w, ../img/buy_modal/buy-choc1_tabdesk.png 121w, ../img/buy_modal/buy-choc1_tabdesk2x.png 240w"
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="../img/buy_modal/buy-choc1_mob.png"
+            alt="Choco1"
+          />
+          <button class="modal-sell-button" type="button">100 g</button>
+        </div>
+      </li>
+      <li class="modal-sell-li">
+        <div class="modal-sell-div">
+          <img
+            class="modal-sell-img"
+            srcset="../img/buy_modal/buy-choc2_mob.png 84w, ../img/buy_modal/buy-choc2_mob2x.png 168w, ../img/buy_modal/buy-choc2_tabdesk.png 121w, ../img/buy_modal/buy-choc2_tabdesk2x.png 240w"
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="../img/buy_modal/buy-choc2_mob.png"
+            alt="Choco2"
+          />
+          <button class="modal-sell-button" type="button">200 g</button>
+        </div>
+      </li>
+      <li class="modal-sell-li">
+        <div class="modal-sell-div">
+          <img
+            class="modal-sell-img"
+            srcset="../img/buy_modal/buy-choc3_mob.png 84w, ../img/buy_modal/buy-choc3_mob2x.png 168w, ../img/buy_modal/buy-choc3_tabdesk.png 121w, ../img/buy_modal/buy-choc3_tabdesk2x.png 240w"
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="../img/buy_modal/buy-choc3_mob.png"
+            alt="Choco3"
+          />
+          <button class="modal-sell-button" type="button">300 g</button>
+        </div>
+      </li>
+    </ul>
+    <form class="modal-sell-form">
+      <ul class="sell-form-ul list">
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Personal information
+            <ul class="sell-personal-ul list">
+              <li class="sell-personal-li">
+                <input class="input" type="text" placeholder="Name" required />
+              </li>
+              <li class="sell-personal-li">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Surname"
+                  required
+                />
+              </li>
+            </ul>
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Email
+            <input
+              class="input"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Phone number
+            <div class="phone-input-div">
+              <input
+                class="input input-number"
+                placeholder="Phone number"
+                required
+                minlength="9"
+                maxlength="9"
+              />
+            </div>
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Card number
+            <div class="card-input-div">
+              <input
+                class="input input-card"
+                type="text"
+                placeholder="Enter Card"
+                required
+                minlength="16"
+                maxlength="16"
+              />
+            </div>
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label" for="modal_comment">
+            Comment
+            <textarea
+              class="input input-comment"
+              name="Comment"
+              id="modal_comment"
+              rows="4"
+              placeholder="Enter text"
+            >
+            </textarea>
+          </label>
+        </li>
+      </ul>
+    </form>
+    <button class="sell-btn-modal" type="submit">Submit</button>
+  </div>
+</div>
+
     <div class="backdrop-rev is-hidden-rev" data-modal-2>
   <div class="thumb-div-rev">
     <button data-modal-close-2 type="button" class="thumb-button-rev">
@@ -834,6 +968,133 @@
       </ul>
     </form>
     <button class="button-modal-rev" type="submit">Send</button>
+  </div>
+</div>
+
+    <div class="backdrop is-hidden" data-modal-5>
+  <div class="thumb-div">
+    <button data-modal-close-5 type="button" class="thumb-button">
+      <svg class="thumb-svg" width="12" height="12">
+        <use href="../img/icons.svg#cross_black"></use>
+      </svg>
+    </button>
+    <h3 class="modal-sell-title">
+      BUY <span class="modal-sell-span"> NOW</span>
+    </h3>
+    <ul class="modal-sell-ul list">
+      <li class="modal-sell-li">
+        <div class="modal-sell-div">
+          <img
+            class="modal-sell-img"
+            srcset="../img/buy_modal/buy-choc1_mob.png 84w, ../img/buy_modal/buy-choc1_mob2x.png 168w, ../img/buy_modal/buy-choc1_tabdesk.png 121w, ../img/buy_modal/buy-choc1_tabdesk2x.png 240w"
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="../img/buy_modal/buy-choc1_mob.png"
+            alt="Choco1"
+          />
+          <button class="modal-sell-button" type="button">100 g</button>
+        </div>
+      </li>
+      <li class="modal-sell-li">
+        <div class="modal-sell-div">
+          <img
+            class="modal-sell-img"
+            srcset="../img/buy_modal/buy-choc2_mob.png 84w, ../img/buy_modal/buy-choc2_mob2x.png 168w, ../img/buy_modal/buy-choc2_tabdesk.png 121w, ../img/buy_modal/buy-choc2_tabdesk2x.png 240w"
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="../img/buy_modal/buy-choc2_mob.png"
+            alt="Choco2"
+          />
+          <button class="modal-sell-button" type="button">200 g</button>
+        </div>
+      </li>
+      <li class="modal-sell-li">
+        <div class="modal-sell-div">
+          <img
+            class="modal-sell-img"
+            srcset="../img/buy_modal/buy-choc3_mob.png 84w, ../img/buy_modal/buy-choc3_mob2x.png 168w, ../img/buy_modal/buy-choc3_tabdesk.png 121w, ../img/buy_modal/buy-choc3_tabdesk2x.png 240w"
+            sizes="(min-width 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="../img/buy_modal/buy-choc3_mob.png"
+            alt="Choco3"
+          />
+          <button class="modal-sell-button" type="button">300 g</button>
+        </div>
+      </li>
+    </ul>
+    <form class="modal-sell-form">
+      <ul class="sell-form-ul list">
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Personal information
+            <ul class="sell-personal-ul list">
+              <li class="sell-personal-li">
+                <input class="input" type="text" placeholder="Name" required />
+              </li>
+              <li class="sell-personal-li">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Surname"
+                  required
+                />
+              </li>
+            </ul>
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Email
+            <input
+              class="input"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Phone number
+            <div class="phone-input-div">
+              <input
+                class="input input-number"
+                placeholder="Phone number"
+                required
+                minlength="9"
+                maxlength="9"
+              />
+            </div>
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label">
+            Card number
+            <div class="card-input-div">
+              <input
+                class="input input-card"
+                type="text"
+                placeholder="Enter Card"
+                required
+                minlength="16"
+                maxlength="16"
+              />
+            </div>
+          </label>
+        </li>
+        <li class="sell-form-li">
+          <label class="sell-form-label" for="modal_comment">
+            Comment
+            <textarea
+              class="input input-comment"
+              name="Comment"
+              id="modal_comment"
+              rows="4"
+              placeholder="Enter text"
+            >
+            </textarea>
+          </label>
+        </li>
+      </ul>
+    </form>
+    <button class="sell-btn-modal" type="submit">Submit</button>
   </div>
 </div>
 

@@ -1,0 +1,378 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(46, 47, 66, 0.4);
+  backdrop-filter: blur(2px);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.thumb-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  max-height: 95%;
+  overflow-y: auto;
+
+  width: 291px;
+  border-radius: 15px;
+  padding: 53px 14px 14px 14px;
+  background: #fafafa;
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .thumb-div {
+    width: 609px;
+    height: 1058px;
+    padding: 48px;
+  }
+}
+
+.thumb-button {
+  position: absolute;
+  top: 14px;
+  left: auto;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .thumb-button {
+    top: 24px;
+    left: auto;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.thumb-svg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: #111111;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb-svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.thumb-button:hover,
+.thumb-button:focus {
+  border-radius: 50%;
+  background-color: #fcf1e0;
+}
+
+.thumb-button:hover .thumb-svg,
+.thumb-button:focus .thumb-svg {
+  stroke: #d44528;
+}
+
+.modal-sell-title {
+  display: flex;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sell-title {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.modal-sell-span {
+  color: #111111;
+}
+
+.modal-sell-ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sell-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.modal-sell-li {
+  display: block;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  width: 263px;
+  height: 85px;
+  background: var(--background-white);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sell-li {
+    width: 160px;
+    height: 196px;
+    padding: 24px 20px 18px;
+  }
+}
+
+.modal-sell-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sell-div {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.modal-sell-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-sell-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--background-color);
+  padding: 6px 12px;
+  width: 70px;
+  height: 29px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sell-button {
+    width: 96px;
+    height: 33px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.modal-sell-button:hover,
+.modal-sell-button:focus {
+  background: var(--brand-color);
+}
+
+.modal-sell-form {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sell-form {
+    margin-bottom: 18px;
+  }
+}
+
+.sell-form-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.sell-form-li {
+  width: 100%;
+}
+
+.sell-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .sell-form-label {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.sell-personal-ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .sell-personal-ul {
+    flex-direction: row;
+    gap: 21px;
+  }
+}
+
+.sell-personal-li {
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  padding: 14px 18px;
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.5px 5.5px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    height: 66px;
+    padding: 22px 24px;
+  }
+}
+
+.input::placeholder {
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .input::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.phone-input-div {
+  position: relative;
+}
+
+.input-number {
+  padding: 10px 18px 10px 102px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-number {
+    padding: 17px 24px 17px 177px;
+  }
+}
+
+.card-input-div {
+  position: relative;
+}
+
+.input-card {
+  padding-right: 70px;
+}
+
+.input-comment {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 91px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-comment {
+    height: 137px;
+  }
+}
+
+.sell-btn-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 109px;
+  height: 41px;
+  background: var(--brand-color);
+  color: var(--background-white);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .sell-btn-modal {
+    width: 133px;
+    height: 45px;
+  }
+}
+
+.sell-btn-modal:hover,
+.sell-btn-modal:focus {
+  background: #fcf1e0;
+  color: var(--brand-color);
+}

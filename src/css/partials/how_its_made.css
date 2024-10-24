@@ -108,25 +108,24 @@
 }
 
 .how-its-made-p {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: start;
+  font-size: 20px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 32px;
   color: var(--background-color);
 }
 
 @media screen and (min-width: 768px) {
   .how-its-made-p {
-    margin-right: 200px;
+    margin-right: 180px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .how-its-made-p {
-    margin-right: 102px;
+    margin-right: 80px;
   }
 }
 
@@ -148,24 +147,25 @@
 @media screen and (min-width: 1200px) {
   .how-its-made-ul {
     gap: 24px;
-    padding-right: 0px;
+    padding-right: 15px;
   }
 }
 
 .how-its-made-li {
-  margin-left: 16px;
+  margin-left: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--background-color);
+  display: flex;
+  align-items: baseline;
 }
 
 .how-its-made-li::before {
-  display: inline-block;
   margin-right: 8px;
   content: '';
-  width: 8px;
+  min-width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #4c4c4c;

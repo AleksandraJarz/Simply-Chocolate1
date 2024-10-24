@@ -50,7 +50,7 @@
     max-width: 704px;
     height: 890px;
     /* max-width: 768px; */
-    padding: 671px 40px 40px;
+    padding: 671px 30px 40px;
 
     margin-bottom: 50px;
 
@@ -120,15 +120,6 @@
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-title {
-    line-height: 1.21;
-    font-size: 28px;
-    width: 440px;
-    max-height: 120px;
-  }
-}
-
 .hero-btn-buy {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -144,15 +135,6 @@
   border: none;
 
   transition: background-color var(--transition), color var(--transition);
-}
-
-@media screen and (min-width: 768px) {
-  .hero-btn-buy {
-    padding: 14px 40px;
-
-    height: 45px;
-    min-width: 144px;
-  }
 }
 
 .hero-btn-buy:hover,
@@ -198,16 +180,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero-btn-how {
-    padding: 14px 40px;
-    text-decoration: none;
-
-    height: 45px;
-    max-width: 183px;
-  }
-}
-
 .hero-btn-how:hover,
 .hero-btn-how:focus {
   border: 1px solid var(--brand-color);
@@ -225,14 +197,6 @@
   .hero-buttons {
     margin-bottom: 32px;
     list-style: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-btns-position {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -260,15 +224,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero-scroll-btn {
-    gap: 14px;
-    font-size: 14px;
-    line-height: 1.28;
-    text-decoration: none;
-  }
-}
-
 .hero-scroll-container {
   height: 28px;
   width: 28px;
@@ -282,24 +237,9 @@
   transition: background-color var(--transition), fill var(--transition);
 }
 
-@media screen and (min-width: 768px) {
-  .hero-scroll-container {
-    height: 38px;
-    width: 38px;
-    padding: 8px;
-  }
-}
-
 .scroll-icon {
   width: 16px;
   height: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .scroll-icon {
-    width: 22px;
-    height: 22px;
-  }
 }
 
 .hero-scroll-btn:hover,
@@ -312,4 +252,46 @@
 .hero-scroll-btn:focus .hero-scroll-container {
   background-color: var(--brand-color);
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    line-height: 1.2;
+    font-size: 28px;
+    width: 470px;
+    max-height: 120px;
+  }
+  .hero-btn-buy {
+    padding: 14px 40px;
+
+    height: 45px;
+    min-width: 144px;
+  }
+  .hero-btn-how {
+    padding: 14px 40px;
+    text-decoration: none;
+
+    height: 45px;
+    max-width: 183px;
+  }
+  .hero-btns-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-scroll-btn {
+    gap: 14px;
+    font-size: 14px;
+    line-height: 1.28;
+    text-decoration: none;
+  }
+  .hero-scroll-container {
+    height: 38px;
+    width: 38px;
+    padding: 8px;
+  }
+  .scroll-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
